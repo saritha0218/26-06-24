@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 150px;
+            padding-left: 300px;
+        }
+        #container{
+            display: inline-flex;
+        }
+        h1{
+            font-size: 25px;
+        }
+        #div1{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(29, 224, 235);
+            animation-name: colors1;
+            animation-duration: 1s;
+            animation-delay: 1.4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colors1 {
+            0%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(29, 224, 235);
+            }
+            50%{
+                transform: translateX(0px) translateY(-30px);
+                background-color: rgb(29, 224, 235);
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(29, 224, 235);
+            }
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(213, 41, 41);
+            animation-name: colors2;
+            animation-duration: 1s;
+            animation-delay: 1.6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colors2 {
+            0%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(213, 41, 41);
+            }
+            50%{
+                transform: translateX(0px) translateY(-30px);
+                background-color: rgb(213, 41, 41);
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(213, 41, 41);
+            }
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(240, 206, 14);
+            animation-name: colors3;
+            animation-duration: 1s;
+            animation-delay: 1.8s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colors3 {
+            0%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(240, 206, 14);
+            }
+            50%{
+                transform: translateX(0px) translateY(-30px);
+                background-color: rgb(240, 206, 14);
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(240, 206, 14);
+            }
+        }
+        #div4{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(124, 231, 48);
+            animation-name: colors4;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes colors4 {
+            0%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(124, 231, 48);
+            }
+            50%{
+                transform: translateX(0px) translateY(-30px);
+                background-color: rgb(124, 231, 48);
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+                background-color: rgb(124, 231, 48);
+            }
+        }
+
+        #content{
+            display: inline-flex;
+        }
+        #div5{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            box-shadow: 20;
+            animation-name: movement1;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement1 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div6{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement2;
+            animation-duration: 1s;
+            animation-delay: 1.2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement2 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div7{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement3;
+            animation-duration: 1s;
+            animation-delay: 0.8s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement3 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div8{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement4;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement4 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div9{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement5;
+            animation-duration: 1s;
+            animation-delay: 1.2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement5 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div10{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement6;
+            animation-duration: 1s;
+            animation-delay: 0.8s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement6 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div11{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement7;
+            animation-duration: 1s;
+            animation-delay: 1.2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement7 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+        #div12{
+            display: inline-block;
+            width: 40px;
+            height: 200px;
+            background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            animation-name: movement8;
+            animation-duration: 1s;
+            animation-delay: 0.8s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        @keyframes movement8 {
+            0%{
+                transform: scaleY(0);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            50%{
+                transform: scaleY(1);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+            100%{
+                transform: scaleY(0.2);
+                background: linear-gradient( #ffd700, #ff4500, #ff0000);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+        <section>
+            <h1>Google Logo Animation</h1><br><br><br><br><br><br><br>
+        <div id="container">
+            <div id="div1"></div>&emsp;&emsp;
+            <div id="div2"></div>&emsp;&emsp;
+            <div id="div3"></div>&emsp;&emsp;
+            <div id="div4"></div>&emsp;&emsp;
+         </div>
+         </section><br><br><br><br>
+
+        <section>
+            <h1>Music Animation</h1><br><br><br><br><br><br><br><br>
+        <div id="content">
+            <div id="div5"></div>&emsp;&emsp;
+            <div id="div6"></div>&emsp;&emsp;
+            <div id="div7"></div>&emsp;&emsp;
+            <div id="div8"></div>&emsp;&emsp;
+            <div id="div9"></div>&emsp;&emsp;
+            <div id="div10"></div>&emsp;&emsp;
+            <div id="div11"></div>&emsp;&emsp;
+            <div id="div12"></div>&emsp;&emsp;
+        </div>
+        </section>
+    </center>
+</body>
+</html>
